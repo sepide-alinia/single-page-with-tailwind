@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import url(http://cdn.font-store.ir/yekan.css); */
+
+@font-face{
+  font-family: vazir;
+  src: url('./assets/fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-FD-WOL.woff2') format('woff2')
+}
+@font-face{
+  font-family: yekan;
+  src: url('./assets/fonts/Yekan.woff2') format('woff2')
+}
+
+
+
+
+* {
+  font-family: "yekan";
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.pulse {
+  animation: pulse-animation 1.5s infinite;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 1px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #fff2edf4;
+}
+
+.smallTriangle {
+  width: 0;
+  height: 0;
+  border-left: 1px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #fff2edf4;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(254, 89, 15, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(254, 89, 15, 0);
+  }
+}
+/* 
+.slick-list > div{
+  display: flex;
+} */
+
+
+

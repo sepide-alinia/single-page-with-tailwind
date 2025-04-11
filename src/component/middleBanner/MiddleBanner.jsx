@@ -12,25 +12,25 @@ const { ref: myRef, inView: isVisible } = useInView();
 
 
   return (
-    <div className=" bg-[url('../../src/images/bg.jpg')] bg-cover  h-screen flex flex-row-reverse items-center">
+    <div className=" bg-[url('../../src/images/bg.jpg')] bg-cover  h-fit py-10 flex flex-row-reverse lg:flex-col items-center ">
       <ScrollAnimation animateIn="fadeInLeft" animateOnce>
-        <div className="mr-18 ">
-          <img className="size-10/12" src={worker} />
+        <div className="mr-18  ">
+          <img className="size-10/12 lg:mx-auto" src={worker} />
         </div>
       </ScrollAnimation>
 
-      <div className="text-right  mr-12 flex flex-col items-end ">
+      <div className="text-right  mr-12  flex flex-col items-end lg:mt-5  ">
         <ScrollAnimation animateIn="fadeInUp" animateOnce>
-          <h1 className="text-[50px] leading-[65px] text-white  ">
-            ما بهترین خدمات صنعتی
-            <br />
-            را ارائه می دهیم.
-            <span className=" text-primary_1">
+          <h1 className="text-[50px] md:text-4xl leading-[65px] text-white  ">
+             ما بهترین خدمات صنعتی    
+            <br className="lg:hidden" />
+             را ارائه می دهیم .
+             
+            <span className=" text-primary_1 ">
                ۳۵+ سال </span>
-            <br />
-            تجربه در صنایع
-            <br />
-            .جهانی
+            <br className="lg:hidden" />
+              تجربه در صنایع  جهانی
+           
           </h1>
         </ScrollAnimation>
 
@@ -39,7 +39,7 @@ const { ref: myRef, inView: isVisible } = useInView();
             <Counter myRef={myRef}
             visible={isVisible}
               className1={
-                "font-[vazir] border-r-[6px] text-[50px] text-primary_1 pr-[5rem] mr-[4rem]"
+                "font-[vazir] border-r-[6px] text-[40px] text-primary_1 pr-[5rem] mr-[4rem]"
               }
               className2={
                 " border-r-[6px] text-[22px] text-white pr-[5rem] mr-[4rem]"
@@ -49,16 +49,16 @@ const { ref: myRef, inView: isVisible } = useInView();
             />
             <Counter  myRef={myRef}
             visible={isVisible}
-              className1={"font-[vazir] text-[50px] text-primary_1"}
+              className1={"font-[vazir] text-[40px] text-primary_1"}
               className2={"text-[22px] text-white"}
               number={1330}
               description={"کل پروژه ها"}
             />
           </div>
         </ScrollAnimation>
-        <div className=" mt-8 w-[500px] ">
+        <div className=" mt-8 w-[500px] lg:w-fit  ">
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
-            <p className="text-white w-full leading-8">
+            <p className="text-white  leading-8 lg:text-xl ">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
               ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز

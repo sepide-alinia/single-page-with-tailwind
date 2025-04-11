@@ -10,44 +10,32 @@ import MediaIcons from "../mediaIcons/MediaIcons";
 
 export default function Header() {
   return (
-    <div className=" bg-[#282828] h-14 flex justify-evenly items-center sticky">
-      <div className="flex cursor-pointer mr-12h">
-
-        {/* <div className=" text-white p-2 transition border rounded-full mr-3 hover:text-primary_1 hover:border-primary_1 ">
-          <FaPinterestP className="text-inherit size-4 " />
-        </div> */}
-
-        <MediaIcons icon={<FaPinterestP className="text-inherit size-4 " />}/>
-        <MediaIcons icon={<FaLinkedinIn className="text-inherit size-4" />}/>
-        <MediaIcons icon={<FaFacebookF className="text-inherit size-4 " />}/>
-        <MediaIcons icon={<IoLogoTwitter className="text-inherit size-4  " />}/>
-
-          
-
-          
-
-          
-
-      </div>
-
-      <div className="flex ml-[12rem]">
-        <div className="flex mr-4 items-center">
-          <p className="text-white mr-2 hover:text-primary_1 font-semibold transition cursor-pointer">
-            ۰۹۱۱۱۱۱۱۱۱۱
-          </p>
-          <FiPhoneCall className="text-white size-5" />
+    <div className=" bg-[#282828] xl:bg-red-400 lg:bg-orange-300 md:bg-green-300  sm:bg-zinc-600 h-14 lg:h-24  flex justify-evenly items-center lg:flex-col-reverse  sticky">
+        <div className="flex cursor-pointer mr-12 lg:mr-0  ">
+          <MediaIcons icon={<FaPinterestP className="text-inherit size-4 " />}/>
+          <MediaIcons icon={<FaLinkedinIn className="text-inherit size-4" />}/>
+          <MediaIcons icon={<FaFacebookF className="text-inherit size-4 " />}/>
+          <MediaIcons icon={<IoLogoTwitter className="text-inherit size-4  " />}/>
+        
         </div>
-        <div className="flex mr-4 items-center">
-          <p className="text-white mr-2 font-semibold">test@mail.com</p>
-          <IoMailOutline className="text-white size-5" />
+        <div className="flex ml-[12rem] lg:ml-0 ">
+          <div className="flex mr-4  items-center">
+            <p className="text-white mr-2 hover:text-primary_1 font-semibold transition cursor-pointer">
+              ۰۹۱۱۱۱۱۱۱۱۱
+            </p>
+            <FiPhoneCall className="text-white size-5" />
+          </div>
+          <div className="flex mr-4 items-center">
+            <p className="text-white mr-2 font-semibold">test@mail.com</p>
+            <IoMailOutline className="text-white size-5" />
+          </div>
+          <div className="flex mr-4 items-center">
+            <p className="text-white mr-2 font-semibold">
+              !ما با صنایع جهانی کار می کنیم
+            </p>
+            <GiFactory className="text-white size-5" />
+          </div>
         </div>
-        <div className="flex mr-4 items-center">
-          <p className="text-white mr-2 font-semibold">
-            !ما با صنایع جهانی کار می کنیم
-          </p>
-          <GiFactory className="text-white size-5" />
-        </div>
-      </div>
     </div>
   );
 }

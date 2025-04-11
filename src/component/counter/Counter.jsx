@@ -40,7 +40,7 @@ export default function Counter({ number, description, className1, className2,my
   }, [number,visible]);
 
   return (
-    <div ref={myRef} className="text-right">
+    <div ref={myRef} className="text-right md:flex md:justify-around">
       <p className={className1}>+{count}</p>
       <p className={className2}>{description}</p>
     </div>

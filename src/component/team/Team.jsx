@@ -17,16 +17,16 @@ export default function Team() {
         />
       </ScrollAnimation>
 
-      <div className=" group relative h-screen w-11/12 bg-primary_1  mx-auto rounded-2xl mt-28 pt-1 flex">
-        <div className=" w-10/12 h-3/6 mx-auto mt-24 text-center">
+      <div className=" group relative h-fit w-11/12 xl:w-[98%] bg-primary_1  mx-auto rounded-2xl mt-28 pt-1 ">
+        <div className=" w-10/12 mx-auto mt-24 text-center">
           <Profile />
         </div>
-        <div className="absolute bottom-0 ">
-          <img src={teamBg} />
+        <div className=" flex items-center justify-center">
+          <img src={teamBg} className="w-11/12" />
 
-            <div className="cursor-pointer bg-white hover:bg-black hover:text-white  shadow-[0px_0px_0px_10px_rgba(255,255,255,0.17),0px_0px_0px_22px_rgba(255,255,255,0.18)] transition duration-300 text-lg font-semibold tracking-wider flex items-center justify-center px-10 py-4 rounded-full absolute right-[41.5%] bottom-1/3 ">
+            <div className="cursor-pointer bg-white hover:bg-black hover:text-white  shadow-[0px_0px_0px_10px_rgba(255,255,255,0.17),0px_0px_0px_22px_rgba(255,255,255,0.18)] transition duration-300  font-semibold tracking-wider flex items-center justify-center px-10 py-4 rounded-full absolute   ">
               <FaArrowLeft />
-              <p className="pl-4" >دیدن همه اعضا تیم</p>
+              <p className="pl-4 text-lg xl:text-base" >دیدن همه اعضا تیم</p>
             </div>
 
         </div>

@@ -20,11 +20,19 @@ const  settings = {
   autoplay: true,
   autoplaySpeed: 6000,
   nextArrow: <NavArrowsL 
-  class1={"bg-primary_1 text-white absolute -right-28 -top-20 h-fit p-3 rounded-[.3rem] mt-[12rem] mr-4 translate-x-16 group-hover:-translate-x-1 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer"}
+  class1={"bg-primary_1 text-white absolute -right-28 lg:-right-14 -top-20 h-fit p-3 rounded-[.3rem] mt-[12rem] mr-4 translate-x-16 group-hover:-translate-x-1 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer"}
   />,
   prevArrow: <NavArrowR 
-   class1={"bg-primary_1 text-white absolute -left-20 -top-20 h-fit p-3 rounded-[.3rem] mt-[12rem] mr-4 -translate-x-16 group-hover:-translate-x-1 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer"}
-   />
+   class1={"bg-primary_1 text-white absolute -left-20 lg:-left-8 -top-20 h-fit p-3 rounded-[.3rem] mt-[12rem] mr-4 -translate-x-16 group-hover:-translate-x-1 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer"}
+   />,
+   responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+ ]
 };
   return (
     <div className="h-[95vh]   m-auto">
@@ -34,7 +42,7 @@ const  settings = {
       <Title
         text={"آنچه مشتریان درباره     شرکت ما می گویند"}
         class1={
-          "text-6xl text-center pt-20 w-1/3 m-auto leading-[4rem]"
+          "text-6xl lg:text-5xl text-center pt-20 w-1/3 lg:w-11/12 m-auto leading-[4rem]"
         }
         class2={"bg-primary_1 h-2 w-10 border rounded-full"}
         class3={"bg-primary_1 h-2 w-5 border rounded-full"}
@@ -43,9 +51,9 @@ const  settings = {
         </ScrollAnimation>
 
         <div className="group">
-          <Slider {...settings} className="mt-20 m-auto w-[80%]">
+          <Slider {...settings} className="mt-20 m-auto w-[80%] lg:w-11/12">
             {commentCard.map((item) => (
-              <div className="   !flex flex-row-reverse">
+              <div key={item.title} className="   !flex flex-row-reverse">
                 <div className=" size-24  relative  top-10  ">
                   <img className="rounded-full " src={item.img} />
                 </div>

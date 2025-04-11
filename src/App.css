@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-/* @import url(http://cdn.font-store.ir/yekan.css); */
 
 @font-face{
   font-family: vazir;
@@ -53,10 +52,13 @@ body{
     box-shadow: 0 0 0 20px rgba(254, 89, 15, 0);
   }
 }
-/* 
-.slick-list > div{
-  display: flex;
-} */
+
+
+@layer utilities {
+  .hover{
+    @apply hover:bg-primary_1 hover:text-white !important
+  }
+}
 
 
 
